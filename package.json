@@ -2,6 +2,9 @@
   "name": "ngx-universal",
   "version": "0.0.0",
   "description": "Server platform libraries for Angular",
+  "files":[
+    "dist"
+  ],
   "main": "dist/bundles/state-transfer.umd.min.js",
   "module": "dist//index.js",
   "es2015": "dist//index.js",
