@@ -1,5 +1,9 @@
 {
   "@ngx-universal": {
+    "express-engine": {
+      "angularVersion": 4,
+      "runTests": false
+    },
     "state-transfer": {
       "angularVersion": 4,
       "runTests": false

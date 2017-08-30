@@ -104,8 +104,8 @@ const ts = {
       '!./**/tests/**/*.d.ts',
       '!./**/node_modules/**/*'
     ])
-      .pipe($.tslint({formatter: 'verbose'}))
-      .pipe($.tslint.report({emitError: false}))
+      .pipe($.tslint({ formatter: 'verbose' }))
+      .pipe($.tslint.report({ emitError: false }))
       .on('end', done);
   }
 };

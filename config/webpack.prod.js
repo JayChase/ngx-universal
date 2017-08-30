@@ -29,7 +29,7 @@ module.exports = (group, item, settings) => {
         },
         {
           test: /\.ts$/,
-          use: `awesome-typescript-loader?declaration=false&configFileName=${helpers.root(`packages/${group}/${item}/tsconfig.json`)}`,
+          use: `awesome-typescript-loader?declaration=false&configFileName=${helpers.root(`packages/${group}/${item}/tsconfig.universal.json`)}`,
           exclude: [/\.(spec|e2e)\.ts$/]
         }
       ]

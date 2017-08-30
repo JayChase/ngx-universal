@@ -2,6 +2,10 @@
   "name": "ngx-universal",
   "version": "0.0.0",
   "description": "Server platform libraries for Angular",
+  "main": "packages/@ngx-universal/bundles/state-transfer.umd.min.js",
+  "module": "packages/@ngx-universal/state-transfer/index.js",
+  "es2015": "packages/@ngx-universal/state-transfer/index.js",
+  "typings": "packages/@ngx-universal/state-transfer/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/fulls1z3/ngx-universal.git"
@@ -45,5 +49,6 @@
     "tslint": "~5.7.0",
     "angular-tslint-rules": "^1.0.4",
     "typescript": "~2.3.4"
-  }
+  },
+  "dependencies": {}
 }
