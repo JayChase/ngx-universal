@@ -12,7 +12,7 @@ module.exports = (group, item, settings) => {
       extensions: ['.ts', '.js']
     },
     output: {
-      path: helpers.root(`packages/${group}/${item}/bundles`),
+      path: helpers.root(`dist/bundles`),
       publicPath: '/',
       filename: `${item}.umd.min.js`,
       libraryTarget: 'umd',

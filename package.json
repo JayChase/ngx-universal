@@ -2,10 +2,10 @@
   "name": "ngx-universal",
   "version": "0.0.0",
   "description": "Server platform libraries for Angular",
-  "main": "packages/@ngx-universal/bundles/state-transfer.umd.min.js",
-  "module": "packages/@ngx-universal/state-transfer/index.js",
-  "es2015": "packages/@ngx-universal/state-transfer/index.js",
-  "typings": "packages/@ngx-universal/state-transfer/index.d.ts",
+  "main": "dist/bundles/state-transfer.umd.min.js",
+  "module": "dist//index.js",
+  "es2015": "dist//index.js",
+  "typings": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/fulls1z3/ngx-universal.git"

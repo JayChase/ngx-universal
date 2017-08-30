@@ -34,6 +34,9 @@ const clean = {
       for (const item of Object.keys(packages[group]))
         $.rimraf(`./packages/${group}/${item}/index.metadata.json`, done);
   },
+  'dist/**/*': done => {
+    $.rimraf(`./dist/**/*.js`, done);            
+  },
   'src/*.js': done => {
     for (const group of Object.keys(packages))
       for (const item of Object.keys(packages[group]))
@@ -58,6 +61,7 @@ const clean = {
 
 clean.bundles.displayName = 'clean:bundles';
 clean['index.js'].displayName = 'clean:./index.js';
+clean['dist/**/*'].displayName = 'clean:./dist/**/*';
 clean['index.d.ts'].displayName = 'clean:./index.d.ts';
 clean['index.metadata.json'].displayName = 'clean:./index.metadata.json';
 clean['src/*.js'].displayName = 'clean:./src/*.js';
@@ -220,6 +224,7 @@ gulp.task('clean',
   gulp.parallel(
     clean.bundles,
     clean['index.js'],
+    clean['dist/**/*'],
     clean['index.d.ts'],
     clean['index.metadata.json'],
     clean['src/*.js'],
